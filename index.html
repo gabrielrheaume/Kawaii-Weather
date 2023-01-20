@@ -11,7 +11,7 @@
     <div id="app" v-cloak>
         <div class="accueil" v-show="affichage=='accueil'">
             <h1>Météo</h1>
-            <form action="#">
+            <form name="form_localisation" @submit.prevent="obtenirCoordonnee">
                 <div class="input">
                     <input type="text" name="ville" placeholder="Nom de ville">
                     <span>Ville :</span>
@@ -22,6 +22,51 @@
                 </div>
                 <div class="submit"><input type="submit" value="Envoyer"></div>
             </form>
+        </div>
+
+        <div class="meteo" v-show="affichage=='meteo' && temperature">
+            <h1>Météo</h1>
+            <h2>{{ ville }} ({{ pays }})</h2>
+            <div class="temperature">
+                <div><img :src="meteo_img" alt=""></div>
+                <div class="valeurs">
+                    <p class="temp">{{ temperature }}°C</p>
+                    <p class="ressenti"> {{ temperature_ressentie }}°C ressenti</p>
+                </div>
+            </div>
+            <p class="condition">
+                <span>Condition : </span>
+                <span>{{ meteo }}</span>
+            </p>
+            <p class="vent">
+                <span>Vent : </span>
+                <span>{{ vent }}km/h{{ direction_vent }}</span>
+            </p>
+            <p class="Lever">
+                <span>Levé de soleil : </span>
+                <span>{{ heure_lever }}</span>
+            </p>
+            <p class="coucher">
+                <span>Coucher de soleil : </span>
+                <span>{{ heure_coucher }}</span>
+            </p>
+            <p class="fuseau">
+                <span>Fuseau Horaire : </span>
+                <span>{{ fuseau }}</span>
+            </p>
+            <p class="nuage" v-show="nuage">
+                <span>Nuage : </span>
+                <span>{{ nuage }}%</span>
+            </p>
+            <p class="pluie" v-show="pluie">
+                <span>Pluie : </span>
+                <span>{{ pluie }}mm</span>
+            </p>
+            <p class="neige" v-show="neige">
+                <span>Chute de Neige : </span>
+                <span>{{ neige }}mm</span>
+            </p>
+            <div class="retour" @click="affichage='accueil'"></div>
         </div>
     </div>
 

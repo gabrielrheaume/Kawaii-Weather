@@ -9,16 +9,6 @@
     align-items: center;
 }
 
-.accueil h1
-{
-    font-size: 75px;
-    font-weight: 400;
-    height: 35%;
-    margin: 0;
-    display: flex;
-    align-items: center;
-}
-
 .accueil form
 {
     display: flex;
@@ -31,7 +21,7 @@
 
 .accueil form .submit
 {
-    background-image: url("../../media/nuage.png");
+    background-image: url("../../medias/nuage.png");
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -42,7 +32,7 @@
 
 .accueil form .submit:hover
 {
-    background-image: url("../../media/nuage_scintillant.png");
+    background-image: url("../../medias/nuage_scintillant.png");
 }
 
 .accueil form .submit:hover input
