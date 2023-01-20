@@ -1,0 +1,115 @@
+body
+{
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: marigny, sans-serif;
+}
+
+#app
+{
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/85970590948808133/13DFC20E720ECDD33BF6344DADB4B24DB51F022E/?imw=1024&imh=640&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #app[v-cloak]
+{
+    display: none;
+} */
+
+/*
+Marigny Black Italic
+
+font-family: marigny, sans-serif;
+
+font-weight: 900;
+
+font-style: italic;
+
+
+Marigny Medium Italic
+
+font-family: marigny, sans-serif;
+
+font-weight: 500;
+
+font-style: italic;
+
+
+Marigny Bold Italic
+
+font-family: marigny, sans-serif;
+
+font-weight: 700;
+
+font-style: italic;
+
+
+Marigny Bold
+
+font-family: marigny, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+
+
+Marigny Book
+
+font-family: marigny, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Marigny Medium
+
+font-family: marigny, sans-serif;
+
+font-weight: 500;
+
+font-style: normal;
+
+
+Marigny Book Italic
+
+font-family: marigny, sans-serif;
+
+font-weight: 400;
+
+font-style: italic;
+
+
+Marigny Black
+
+font-family: marigny, sans-serif;
+
+font-weight: 900;
+
+font-style: normal;
+
+
+Marigny Thin Italic
+
+font-family: marigny, sans-serif;
+
+font-weight: 200;
+
+font-style: italic;
+
+
+Marigny Thin
+
+font-family: marigny, sans-serif;
+
+font-weight: 200;
+
+font-style: normal;
+*/

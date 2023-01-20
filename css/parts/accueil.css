@@ -1,0 +1,106 @@
+.accueil
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    height: 60%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accueil h1
+{
+    font-size: 75px;
+    font-weight: 400;
+    height: 35%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.accueil form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65%;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.accueil form .submit
+{
+    background-image: url("../../media/nuage.png");
+    background-position: center;
+    background-size: cover;
+    width: 50%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.accueil form .submit:hover
+{
+    background-image: url("../../media/nuage_scintillant.png");
+}
+
+.accueil form .submit:hover input
+{
+    color: blueviolet;
+}
+
+.accueil form .submit input
+{
+    width: 100%;
+    height: 30px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.accueil form .input
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.accueil form .input input
+{
+    width: 100%;
+    border-radius: 5px;
+    border-top: 1px pink solid;
+    border-right: 1px pink solid;
+    border-bottom: 1px blueviolet solid;
+    border-left: 1px blueviolet solid;
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    padding: 5px 10px;
+}
+
+.accueil form .input input::placeholder
+{
+    color: #ecc8c8;
+}
+
+.accueil form .input span
+{
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 7px;
+}
+
+.accueil form .input input:focus-visible
+{
+    border: 2px;
+    outline-color: pink;
+}
+
+.accueil form .input input:focus + span
+{
+    color: blueviolet;
+}
