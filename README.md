@@ -19,6 +19,10 @@ Ainsi, pour le tester par vous-même, il faudra en récupérer une à sur le sit
 7. Dans le fichier js/main.js, changer le texte de la variable "appid" par votre clé API
 8. Ouvrez le projet et amusez-vous ! :)
 
+## Technologies
+Il était requis d'utiliser vueJS  
+Pour le CSS, le choix était libre ; j'ai choisi le bon vieux CSS de base !
+
 ## Organisation du projet
 ### HTML
 
