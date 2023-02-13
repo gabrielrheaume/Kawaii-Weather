@@ -1,10 +1,10 @@
 # Kawaii-Weather
 
 ## Description du projet
-Ceci était un projet à faire dans le cadre du cours "Techniques avancés en JavaScript"
-Le but était d'apprendre à utiliser un API en suivant sa documentation
-Le style était libre, mais nécessaire
-Cette idée de Kawaii m'est venu en cherchant une image de fond, et j'ai vue celle-ci
+Ceci était un projet à faire dans le cadre du cours "Techniques avancés en JavaScript"  
+Le but était d'apprendre à utiliser un API en suivant sa documentation  
+Le style était libre, mais nécessaire  
+Cette idée de Kawaii m'est venu en cherchant une image de fond, et j'ai vue celle-ci  
 J'ai trouvée l'idée amusante et originale
 
 ## Comment tester le projet
