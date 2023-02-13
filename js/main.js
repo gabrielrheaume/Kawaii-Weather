@@ -1,7 +1,7 @@
 import { createApp, ref, onMounted } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
 /* constantes */
-const appid = "261235bfa7f5b14b6176a67e900f0aa0"
+const appid = "votre clé"
 
 /* variables vue */
 const affichage = ref("accueil")
