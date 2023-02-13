@@ -22,9 +22,10 @@ const neige = ref("")
 const heure_lever = ref("")
 const heure_coucher  =ref("")
 
-/* variables JS */
-
-/* functions */
+/* fonctions */
+/**
+ * Récupère les informations de géolocalisation selon les informations entrées dans le formulaire
+ */
 function obtenirCoordonnee()
 {
     const ville_input = document.forms.form_localisation.ville.value
@@ -42,6 +43,12 @@ function obtenirCoordonnee()
     })
 }
 
+/**
+ * Récupère les informations relatives à la météo selon la localisation
+ * Modifie les valeurs obtenues, au besoin, pour obtenir l'information au format voulu
+ * 
+ * @param object objet - informations de la géolocalisation
+ */
 function obtenirTemperature(objet)
 {
     const latitude = objet.lat
@@ -68,6 +75,12 @@ function obtenirTemperature(objet)
     affichage.value = "meteo"
 }
 
+/**
+ * Retourne la direction d'où vient le vent sous forme de texte
+ * 
+ * @param int deg - degré d'où vient le vent, 0 étant le Nord
+ * @return string - direction textuelle d'où vient le vent
+ */
 function calculerDirection(deg)
 {
     switch(deg)
@@ -84,6 +97,12 @@ function calculerDirection(deg)
     return " du Nord"
 }
 
+/**
+ * Transforme une date UNIX en heure(s) et minute(s)
+ * 
+ * @param int unix
+ * @return string - heure et minute sous le format H:m
+ */
 function obtenirHeure(unix)
 {
     let date = new Date(unix * 1000)
@@ -115,7 +134,7 @@ const root = {
             heure_lever,
             heure_coucher,
 
-            /* FUNCTIONS */
+            /* FONCTIONS */
             obtenirCoordonnee,
             obtenirTemperature,
         }
