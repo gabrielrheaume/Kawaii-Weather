@@ -3,11 +3,24 @@
     position: relative;
     background-color: rgba(255, 255, 255, 0.8);
     width: 50%;
-    height: 75%;
+    height: 80%;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 25px;
+    font-size: 20px;
+}
+
+.meteo h1
+{
+    margin: 50px 0 20px 0;
+    height: 15%;
+}
+
+.meteo h2
+{
+    margin: 0 0 40px 0;
 }
 
 .meteo .retour
@@ -26,4 +39,25 @@
 {
     width: 35px;
     height: 35px;
+}
+
+.meteo .infos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.meteo .infos .temperature
+{
+    display: flex;
+    gap: 30px;
+}
+
+.meteo .infos .temperature div:first-child
+{
+    /* sert à bien voir certaines images de la condition météo actuelle */
+    background: radial-gradient(ellipse, #fde1e0 20%, #ecc9c6 10%, rgba(255, 255, 255, 0) 70%);
 }

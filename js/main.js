@@ -60,7 +60,7 @@ function obtenirTemperature(objet)
         pays.value = infos.sys.country
         temperature.value = Math.round(infos.main.temp - 273.15)
         temperature_ressentie.value = Math.round(infos.main.feels_like - 273.15)
-        meteo.value = infos.weather[0].description
+        meteo.value = infos.weather[0].description.charAt(0).toUpperCase() + infos.weather[0].description.slice(1) // majuscule sur la première lettre + le reste du string
         meteo_img.value = `http://openweathermap.org/img/wn/${infos.weather[0].icon}@2x.png`
         vent.value = Math.round(3.6 * infos.wind.speed)
         direction_vent.value = calculerDirection(infos.wind.deg)
