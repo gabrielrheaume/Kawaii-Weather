@@ -8,7 +8,7 @@ Cette idée de Kawaii m'est venu en cherchant une image de fond, et j'ai vue cel
 J'ai trouvée l'idée amusante et originale
 
 ## Comment tester le projet
-Pour des raisons de sécurité, la version publique du projet ne contient pas ma clé d'API.
+Pour des raisons de sécurité, la version publique du projet ne contient pas ma clé d'API  
 Ainsi, pour le tester par vous-même, il faudra en récupérer une à sur le site de l'API : https://openweathermap.org/
 1. Il faut créer une compte, ou se connecter
 2. En haut à droite, dans le menu déroulant de votre compte, aller dans "My API keys"
