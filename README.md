@@ -20,12 +20,23 @@ Ainsi, pour le tester par vous-même, il faudra en récupérer une à sur le sit
 8. Ouvrez le projet et amusez-vous ! :)
 
 ## Technologies
-Il était requis d'utiliser vueJS  
+Il était requis d'utiliser vueJS avec une structure SPA (Single Page Application)  
 Pour le CSS, le choix était libre ; j'ai choisi le bon vieux CSS de base !
 
 ## Organisation du projet
 ### HTML
-
-### CSS
+Tout le html se trouve dans le fichier index.html  
+On y retrouve aussi quelques manipulations de vueJs ainsi que des appels de fonctions
 
 ### JavaScript
+Une partie du JavaScript se retrouve dans le HTML comme dit précédemment  
+Néanmoins, la majeure partie se retrouve dans js/main.js  
+On y gère les appels d'API et les modifications des données obtenues pour avoir les formats voulus
+
+### CSS
+Pour le CSS, j'ai l'habitude de division par élément  
+Ainsi, dans css/style.css, il n'y a que des importations des autres fichiers css qui se trouvent dans /css/parts  
+Dans cette section, on y retrouve trois fichiers pour trois éléments :
+1. general.css contient tous les styles généraux au site (les polices de caractère, la couleur des textes, etc)
+2. accueil.css gère le style de la page d'accueil, qui est principalement le formulaire pour obtenir la géolocalisation demandé pour la météo
+3. meteo.css gère le style des résultats pour que ce soit aéré puisqu'il y a plusieurs lignes d'information
